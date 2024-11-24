@@ -24,9 +24,13 @@ jobs:
     - name: Build the application
       run: dotnet build --configuration Release --no-restore
 
+    - name: Publish the application
+      run: dotnet publish -c Release -o ./publish
+
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v2
       with:
         app-name: Informational-WebApp
         slot-name: production
         publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}
+        package: ./publish
