@@ -1,4 +1,4 @@
-﻿@page
+@page 
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
@@ -21,13 +21,13 @@
     </p>
     <div>
         <!-- Student Button -->
-        <button class="btn btn-primary btn-lg" onclick="window.location.href='/Student'">
+        <a class="btn btn-primary btn-lg" asp-page="/Student">
             STUDENT
-        </button>
+        </a>
         <!-- Register Button -->
-        <button class="btn btn-secondary btn-lg" onclick="window.location.href='/Register'">
+        <a class="btn btn-secondary btn-lg" asp-page="/Register">
             REGISTER
-        </button>
+        </a>
     </div>
 </div>
 
