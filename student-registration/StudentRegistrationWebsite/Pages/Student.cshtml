@@ -1,9 +1,34 @@
 @page
 @model StudentModel
 @{
-    ViewData["Title"] = "Student Page";
+    ViewData["Title"] = "Students";
 }
 
-<h1>Student Page</h1>
-
-<p>Welcome to the Student page! Here you can manage your profile and view details.</p>
+<div class="container">
+    <h1>Registered Students</h1>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Student ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Date of Birth</th>
+                <th>Registration Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var student in Model.Students)
+            {
+                <tr>
+                    <td>@student.StudentID</td>
+                    <td>@student.FirstName</td>
+                    <td>@student.LastName</td>
+                    <td>@student.Email</td>
+                    <td>@student.DateOfBirth.ToShortDateString()</td>
+                    <td>@student.RegistrationDate.ToString("g")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

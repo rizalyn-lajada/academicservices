@@ -1,18 +1,28 @@
 @page
 @model RegisterModel
-<h1>Register</h1>
-<form method="post">
-    <div>
-        <label for="Name">Name:</label>
-        <input id="Name" name="Name" type="text" required />
-    </div>
-    <div>
-        <label for="Email">Email:</label>
-        <input id="Email" name="Email" type="email" required />
-    </div>
-    <div>
-        <label for="Password">Password:</label>
-        <input id="Password" name="Password" type="password" required />
-    </div>
-    <button type="submit">Register</button>
-</form>
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="container">
+    <h1>Register</h1>
+    <form method="post">
+        <div class="form-group">
+            <label for="FirstName">First Name</label>
+            <input type="text" class="form-control" id="FirstName" name="FirstName" required />
+        </div>
+        <div class="form-group">
+            <label for="LastName">Last Name</label>
+            <input type="text" class="form-control" id="LastName" name="LastName" required />
+        </div>
+        <div class="form-group">
+            <label for="Email">Email</label>
+            <input type="email" class="form-control" id="Email" name="Email" required />
+        </div>
+        <div class="form-group">
+            <label for="DateOfBirth">Date of Birth</label>
+            <input type="date" class="form-control" id="DateOfBirth" name="DateOfBirth" required />
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
