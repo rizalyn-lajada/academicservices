@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "C9my5mkqs9Pmen/ZGdcdVRFctiyJpZC1r7PAv3ykVOn2lVeyO755bO8+g1l7B72aFx/f/DMs7+Z5/tlCOTU0gQ==",
+  "dgSpecHash": "O7X7hV7No3tNaPCjh2N4M1hy8gn0y5VkCQ1ZKeKrSheinP6XJC4B5b70TheMpyD3nRXRff6VJ8R7XG08XwxmMQ==",
   "success": true,
-  "projectFilePath": "C:\\WINDOWS\\system32\\academicservices\\student-registration\\StudentRegistrationWebsite\\StudentRegistrationWebsite.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\rizal\\academicservices\\student-registration\\StudentRegistrationWebsite\\StudentRegistrationWebsite.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rizal\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\rizal\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\rizal\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\rizal\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\rizal\\.nuget\\packages\\system.data.sqlclient\\4.9.0\\system.data.sqlclient.4.9.0.nupkg.sha512"
+  ],
   "logs": []
 }

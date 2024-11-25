@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\WINDOWS\\system32\\academicservices\\student-registration\\StudentRegistrationWebsite\\StudentRegistrationWebsite.csproj": {}
+    "C:\\Users\\rizal\\academicservices\\student-registration\\StudentRegistrationWebsite\\StudentRegistrationWebsite.csproj": {}
   },
   "projects": {
-    "C:\\WINDOWS\\system32\\academicservices\\student-registration\\StudentRegistrationWebsite\\StudentRegistrationWebsite.csproj": {
+    "C:\\Users\\rizal\\academicservices\\student-registration\\StudentRegistrationWebsite\\StudentRegistrationWebsite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\WINDOWS\\system32\\academicservices\\student-registration\\StudentRegistrationWebsite\\StudentRegistrationWebsite.csproj",
+        "projectUniqueName": "C:\\Users\\rizal\\academicservices\\student-registration\\StudentRegistrationWebsite\\StudentRegistrationWebsite.csproj",
         "projectName": "StudentRegistrationWebsite",
-        "projectPath": "C:\\WINDOWS\\system32\\academicservices\\student-registration\\StudentRegistrationWebsite\\StudentRegistrationWebsite.csproj",
+        "projectPath": "C:\\Users\\rizal\\academicservices\\student-registration\\StudentRegistrationWebsite\\StudentRegistrationWebsite.csproj",
         "packagesPath": "C:\\Users\\rizal\\.nuget\\packages\\",
-        "outputPath": "C:\\WINDOWS\\system32\\academicservices\\student-registration\\StudentRegistrationWebsite\\obj\\",
+        "outputPath": "C:\\Users\\rizal\\academicservices\\student-registration\\StudentRegistrationWebsite\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rizal\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -37,6 +37,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.9.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
