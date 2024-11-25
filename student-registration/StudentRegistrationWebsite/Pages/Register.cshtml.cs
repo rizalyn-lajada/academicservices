@@ -26,11 +26,13 @@ public class RegisterModel : PageModel
         {
             try
             {
-                string query = "INSERT INTO Users (Name, Email, Password) VALUES (@Name, @Email, @Password)";
+                string query = @"INSERT INTO Students (FirstName, LastName, Email, DateOfBirth) 
+                                 VALUES (@FirstName, @LastName, @Email, @DateOfBirth)";
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@Name", Input.Name);
+                command.Parameters.AddWithValue("@FirstName", Input.FirstName);
+                command.Parameters.AddWithValue("@LastName", Input.LastName);
                 command.Parameters.AddWithValue("@Email", Input.Email);
-                command.Parameters.AddWithValue("@Password", Input.Password);
+                command.Parameters.AddWithValue("@DateOfBirth", Input.DateOfBirth);
 
                 connection.Open();
                 await command.ExecuteNonQueryAsync();
@@ -42,13 +44,14 @@ public class RegisterModel : PageModel
             }
         }
 
-        return RedirectToPage("Success"); // Add a success page later
+        return RedirectToPage("Success");
     }
 
     public class UserInput
     {
-        public string Name { get; set; } = string.Empty;
+        public string FirstName { get; set; } = string.Empty;
+        public string LastName { get; set; } = string.Empty;
         public string Email { get; set; } = string.Empty;
-        public string Password { get; set; } = string.Empty;
+        public DateTime DateOfBirth { get; set; }
     }
 }
