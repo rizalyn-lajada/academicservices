@@ -1,11 +1,10 @@
-@page 
+@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Home";
 }
 
 <div class="text-center">
-    <!-- Existing Welcome Section -->
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
@@ -13,27 +12,16 @@
 <hr />
 
 <div class="text-center">
-    <!-- Additional Content -->
     <h2>WIT College Student Registration System</h2>
-    <p>
-        Manage your academic journey easily through our platform. Whether you're a student
-        or looking to register, find all the tools you need here.
-    </p>
+    <p>Manage your academic journey easily through our platform.</p>
     <div>
-        <!-- Student Button -->
-        <a class="btn btn-primary btn-lg" asp-page="/Student">
-            STUDENT
-        </a>
-        <!-- Register Button -->
-        <a class="btn btn-secondary btn-lg" asp-page="/Register">
-            REGISTER
-        </a>
+        <a class="btn btn-primary btn-lg" asp-page="/Student">STUDENT</a>
+        <a class="btn btn-secondary btn-lg" asp-page="/Register">REGISTER</a>
     </div>
 </div>
 
 <hr />
 
 <div class="text-center">
-    <!-- Footer -->
     <p>&copy; 2024 - StudentRegistrationWebsite - <a href="/Privacy">Privacy</a></p>
 </div>
